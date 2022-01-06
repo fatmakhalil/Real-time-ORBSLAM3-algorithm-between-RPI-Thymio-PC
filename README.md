@@ -55,9 +55,7 @@ make install
 
 (5) Now, go to the ORBSLAM3 directory and build the project (./build.sh ).
 
-(6) To run the ORBSLAM library on your PC you need to run the command below after running the code on the RPI.
-
-./Examples/Monocular/mono_euroc ./Vocabulary/ORBvoc.txt./Examples/Monocular/EuRoC.yaml ./MH01./Examples/Monocular/EuRoC_TimeStamps/MH01.txt dataset-MH01_mono
+(6) To run the project, go to ( steps )
 
 Please note that the files ( Optimizer.cc , monoeuroc.cc ) have been edited to achieve the purpose of the project. The rest is the same as the original ORBSLAM3 code here (https://github.com/UZ-SLAMLab/ORB_SLAM3)
 
