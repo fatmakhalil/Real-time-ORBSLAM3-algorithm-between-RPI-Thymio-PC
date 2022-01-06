@@ -1,0 +1,17 @@
+• On the RPI side: you need to install and build the blaar library ().
+
+– Open two terminals of the RPI through ssh connections; The first one will include the line to open the aseba-medulla service as follows:
+
+asebamedulla "ser:device=/dev/ttyACM0"
+
+– While the second terminal will run the python code (RPI_Code.py) using Python3.5, note that the blaar library isn't compatible with python 2.7.
+
+cd /path to the code installed inside the blaar build folder
+
+python3 RPI_code.py
+
+• On the PC side; you also need to install the same library and open only one terminal and run the ORBSLAM3;
+
+To run the ORBSLAM library on your PC you need to run the command below after running the code on the RPI.
+
+./Examples/Monocular/mono_euroc ./Vocabulary/ORBvoc.txt./Examples/Monocular/EuRoC.yaml ./MH01./Examples/Monocular/EuRoC_TimeStamps/MH01.txt dataset-MH01_mono
