@@ -20,11 +20,17 @@ sudo apt-get install libjasper-dev libdc1394-22-dev
 (2) Install OPenCV3 
 
 git clone https://github.com/opencv/opencv.git
+
 git chekcout 3.3.1
+
 mkdir build
+
 cd build
+
 cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
+
 make -j3
+
 make install
 
 (3) Install Eigen3
@@ -34,11 +40,17 @@ sudo apt install libeigen3-dev
 (4) Install Pangolin
 
 git clone https://github.com/stevenlovegrove/Pangolin.git
+
 cd Pangolin
+
 mkdir build
+
 cd build
+
 cmake .. -DCMAKE_BUILD_TYPE=Release
+
 make -j 3
+
 make install
 
 (5) Now, go to the ORBSLAM3 directory and build the project (./build.sh ).
