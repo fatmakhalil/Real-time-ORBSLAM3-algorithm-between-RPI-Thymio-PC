@@ -1,5 +1,6 @@
 #############################################
 ## Rights reserved for BlcArrayTCP4Server developed by Dr.Arnaud Blanchard ( ETIS LAB)
+##   https://git.cyu.fr/blaar/blaar.git
 ############################################################
 import dbus
 import dbus.mainloop.glib
